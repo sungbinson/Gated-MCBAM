@@ -49,7 +49,7 @@ Training documentation will be updated soon.
 ## Contact
 
 For any questions or issues, please contact:
-- Email: jeongho.min@unist.ac.kr
+- Email: min.jeongho@lumir.space
 
 ## License
 
