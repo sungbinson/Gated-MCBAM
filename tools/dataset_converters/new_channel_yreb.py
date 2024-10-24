@@ -55,7 +55,7 @@ def replace_nan_with_mean(image):
 import pdb
 for folder in folders:
     base_dir = "/home/hjkim/seg-challenge/MMSeg-YREB"
-    target_dir = "/home/hjkim/seg-challenge/MMSeg-YREB_v5"
+    target_dir = "/home/hjkim/seg-challenge/MMSeg-YREB"
     s1_dir = os.path.join(base_dir, folder, "SAR")
     target_dir = os.path.join(target_dir, folder, "SAR_AVG_TIF")
 
@@ -72,34 +72,14 @@ for folder in folders:
             vv = image[:,:,0]
             vh = image[:,:,1]
 
-            # new_image = replace_nan_with_zero(image)
-            # new_image = replace_value(new_image, old_value=-1, new_value=0)
-            # nan -> mean
-            # vv = min_max_normalize(vv).squeeze()
-            # vh = min_max_normalize(vh).squeeze()
-            # vv = replace_nan_with_mean(vv)
-            # vh = replace_nan_with_mean(vh)
-            # NewBand1 = (VH - VV) / (VH + VV)
-            # new_band1 = np.abs((vh - vv)) / (vh + vv + 1e-6)  
             new_band2 = (vv+vh) / 2
-            # NewBand2 = sqrt((VH^2 + VV^2) / 2)
 
-            # new_band2 = np.sqrt((vh ** 2 + vv ** 2) / 2)
-            
             new_image = np.stack((vv, vh, new_band2), axis=-1)
-            # new_image = average_channel_sar(vv, vh)
-            # new_image = difference_channel_sar(vv,vh)
-            # new_image = np.stack((new_band1, new_band1, new_band1), axis=-1)
-           
+
             new_filename = filename.replace('.tif', '.tif')
             new_file_path = os.path.join(target_dir , new_filename)
             print(new_file_path)
             
-            # print(file_path)
-            # print(new_file_path)
-            # exit()
-            
-            # imageio.imwrite(new_file_path, new_image.astype(np.uint8))
             tiff.imwrite(new_file_path, new_image)
 
 print("Done")
