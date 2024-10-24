@@ -1,0 +1,5 @@
+*.log           # 모든 로그 파일 제외
+/node_modules/  # node_modules 폴더 제외
+.env           # .env 파일 제외
+data/*.csv     # data 폴더의 모든 csv 파일 제외
+*.pth
