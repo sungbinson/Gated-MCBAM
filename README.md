@@ -27,40 +27,6 @@ Our model features:
   - Channel 3: (VV+VH)/2
 - Processing script: `tools/dataset_converters/new_channel_yreb.py`
 
-## Model Weights
-
-Pre-trained model weights can be downloaded from:
-[Google Drive Link](https://drive.google.com/file/d/1fKRVMwmWSFI2TxDi-9z8e1bGPigLlm-7/view?usp=drive_link)
-
-## Testing
-
-### Individual Model Testing
-You can test individual models using:
-```bash
-python tools/test.py \
-    --config path/to/config.py \
-    --checkpoint path/to/weights.pth
-```
-
-### Ensemble Testing
-1. Download the model weights from our Google Drive
-2. Save the weights in your local directory
-3. Navigate to the `workdir` folder
-4. Run `ensemble.py` with appropriate config files and weight paths
-
-
-## Directory Structure
-```
-├── tools
-│   ├── test.py
-│   └── train.py
-│   └── dataset_converters
-│       └── new_channel_yreb.py
-        └── 12ch-10ch.py
-└── workdir
-    └── ensemble.py
-```
-
 ## Training
 
 ### Prerequisites
@@ -97,6 +63,42 @@ workdir/whisper/
 ```
 
 For detailed training configurations and options, please refer to the [MMSegmentation official documentation](https://mmsegmentation.readthedocs.io/).
+
+## Model Weights
+
+Pre-trained model weights can be downloaded from:
+[Google Drive Link](https://drive.google.com/file/d/1fKRVMwmWSFI2TxDi-9z8e1bGPigLlm-7/view?usp=drive_link)
+
+## Testing
+
+### Individual Model Testing
+You can test individual models using:
+```bash
+python tools/test.py \
+    --config path/to/config.py \
+    --checkpoint path/to/weights.pth
+```
+
+### Ensemble Testing
+1. Download the model weights from our Google Drive
+2. Save the weights in your local directory
+3. Navigate to the `workdir` folder
+4. Run `ensemble.py` with appropriate config files and weight paths
+
+
+## Directory Structure
+```
+├── tools
+│   ├── test.py
+│   └── train.py
+│   └── dataset_converters
+│       └── new_channel_yreb.py
+        └── 12ch-10ch.py
+└── workdir
+    └── ensemble.py
+```
+
+
 
 
 ## Contact
