@@ -1,10 +1,10 @@
-# Gated-based MultiCbam for Multi-modal Semantic Segmentation
+# CrossGate-MCBAM: Cross-Modal Gating Mechanism with Multi-Scale Attention for SAR-Optical Semantic Segmentation
 
-This repository contains the implementation of our proposed Gated-based MultiCbam model for multi-modal semantic segmentation.
+This repository contains the implementation of CrossGate-MCBAM, a novel approach for multi-modal semantic segmentation that leverages cross-modal attention and gating mechanisms for SAR and optical remote sensing data.
 
 ## Overview
 
-Our model utilizes both 12-channel and 10-channel inputs for ensemble predictions, along with 3-channel VV/VH data for multi-modal semantic segmentation.
+Our model utilizes both 12-channel and 10-channel inputs for ensemble predictions, along with 3-channel VV/VH data for multi-modal semantic segmentation. The architecture incorporates cross-modal attention mechanisms and multi-scale feature fusion for improved performance.
 
 ## Preprocessing
 
@@ -18,12 +18,26 @@ Our model utilizes both 12-channel and 10-channel inputs for ensemble prediction
 - VV and VH channels are processed into 3-channel format
 - Processing script: `tools/dataset_converters/new_channel_yreb.py`
 
+## Model Weights
+
+Pre-trained model weights can be downloaded from:
+[Google Drive Link](https://drive.google.com/file/d/1fKRVMwmWSFI2TxDi-9z8e1bGPigLlm-7/view?usp=drive_link)
+
 ## Testing
 
-1. Download the model weights from our [Google Drive]
+### Individual Model Testing
+You can test individual models using:
+```bash
+python tools/test.py \
+    --config path/to/config.py \
+    --checkpoint path/to/weights.pth
+```
+
+### Ensemble Testing
+1. Download the model weights from our Google Drive
 2. Save the weights in your local directory
 3. Navigate to the `workdir` folder
-4. Run `ensemble.py` with appropriate config file and weight paths
+4. Run `ensemble.py` with appropriate config files and weight paths
 
 Example:
 ```bash
@@ -32,24 +46,25 @@ python ensemble.py \
     --checkpoint path/to/weights.pth
 ```
 
-## Training
-
-Training documentation will be updated soon.
-
 ## Directory Structure
 ```
 ├── 12ch-10ch.py
 ├── tools
+│   ├── test.py
 │   └── dataset_converters
 │       └── new_channel_yreb.py
 └── workdir
     └── ensemble.py
 ```
 
+## Training
+
+Training documentation will be updated soon.
+
 ## Contact
 
 For any questions or issues, please contact:
-- Email: min.jeongho@lumir.space
+- Email: jeongho.min@unist.ac.kr
 
 ## License
 
@@ -57,4 +72,7 @@ For any questions or issues, please contact:
 
 ## Citation
 
+If you find this work useful in your research, please consider citing:
+```
 [Citation information to be added]
+```
