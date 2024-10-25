@@ -51,11 +51,12 @@ python tools/test.py \
 
 ## Directory Structure
 ```
-├── 12ch-10ch.py
 ├── tools
 │   ├── test.py
+│   └── train.py
 │   └── dataset_converters
 │       └── new_channel_yreb.py
+        └── 12ch-10ch.py
 └── workdir
     └── ensemble.py
 ```
