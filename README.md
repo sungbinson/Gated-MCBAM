@@ -1,10 +1,15 @@
-# CrossGate-MCBAM: Cross-Modal Gating Mechanism with Multi-Scale Attention for SAR-Optical Semantic Segmentation
+# Gated-MCBAM: A Cross-Modal Attention Framework with Dual-Stream Architecture for Multi-Source Remote Sensing Segmentation
 
-This repository contains the implementation of CrossGate-MCBAM, a novel approach for multi-modal semantic segmentation that leverages cross-modal attention and gating mechanisms for SAR and optical remote sensing data.
+This repository contains the implementation of Gated-MCBAM, an innovative dual-stream framework that combines cross-modal attention and gating mechanisms for multi-source remote sensing segmentation. Our approach effectively integrates SAR and optical remote sensing data through a sophisticated attention mechanism.
 
-## Overview
+## Model Architecture
 
-Our model utilizes both 12-channel and 10-channel inputs for ensemble predictions, along with 3-channel VV/VH data for multi-modal semantic segmentation. The architecture incorporates cross-modal attention mechanisms and multi-scale feature fusion for improved performance.
+Our model features:
+- Dual-stream architecture for processing SAR and MSI data
+- Cross-modal attention mechanism for feature interaction
+- Gating mechanism for adaptive feature selection
+- Multi-scale feature fusion
+- Integration of Swin Transformer and ResNet backbones
 
 ## Preprocessing
 
