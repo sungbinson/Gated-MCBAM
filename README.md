@@ -53,6 +53,11 @@ python tools/train.py ./workdir/whisper/Gcbamr50_swin_weight_256x256_upernet_las
   ```bash
   python tools/train.py ${CONFIG_FILE} --cfg-options model.encoder.in_channels=6
   ```
+### Pretrained Models
+The model uses ImageNet pretrained weights for both streams:
+- EO Stream: ResNet backbone initialized with ImageNet pretrained weights
+- MSI Stream: ConvNeXt/Swin Transformer backbone initialized with ImageNet pretrained weights
+- The pretrained weights will be automatically downloaded during the first training
 
 ### Config Files
 Configuration files for different methods can be found in their respective folders under:
