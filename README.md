@@ -63,7 +63,47 @@ python tools/test.py \
 
 ## Training
 
-Training documentation will be updated soon.
+# Gated-MCBAM: A Cross-Modal Attention Framework with Dual-Stream Architecture for Multi-Source Remote Sensing Segmentation
+
+[Previous sections remain the same until Training section...]
+
+## Training
+
+### Prerequisites
+- Preprocessed dataset (multisen folder and SAR_AVG_TIF)
+- Config files located in `workdir/whisper/` for different methods
+
+### Training on a Single GPU
+
+Basic usage:
+```bash
+python tools/train.py ${CONFIG_FILE} [optional arguments]
+```
+
+Example:
+```bash
+python tools/train.py ./workdir/whisper/Gcbamr50_swin_weight_256x256_upernet_last_v3/config.py
+```
+
+#### Optional Arguments
+- `--work-dir ${WORK_DIR}`: Override the working directory
+- `--amp`: Enable auto mixed precision training
+- `--resume`: Resume from the latest checkpoint in the work_dir automatically
+- `--cfg-options ${OVERRIDE_CONFIGS}`: Override config settings. For example:
+  ```bash
+  python tools/train.py ${CONFIG_FILE} --cfg-options model.encoder.in_channels=6
+  ```
+
+### Config Files
+Configuration files for different methods can be found in their respective folders under:
+```
+workdir/whisper/
+└── method_name/
+    └── config.py
+```
+
+For detailed training configurations and options, please refer to the [MMSegmentation official documentation](https://mmsegmentation.readthedocs.io/).
+
 
 ## Contact
 
