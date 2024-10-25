@@ -16,7 +16,7 @@ Our model features:
 ### 1. 12-Channel to 10-Channel Conversion
 - We use both 12-channel and 10-channel data for ensemble predictions
 - The original 12-channel data from YREB-dataset is converted to 10-channel format
-- Conversion script: `12ch-10ch.py`
+- Conversion script: `tools/dataset_converters/12ch-10ch.py`
 - Output is stored in the `multisen` folder
 
 ### 2. SAR Data Processing
