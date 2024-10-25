@@ -63,12 +63,6 @@ python tools/test.py \
 
 ## Training
 
-# Gated-MCBAM: A Cross-Modal Attention Framework with Dual-Stream Architecture for Multi-Source Remote Sensing Segmentation
-
-[Previous sections remain the same until Training section...]
-
-## Training
-
 ### Prerequisites
 - Preprocessed dataset (multisen folder and SAR_AVG_TIF)
 - Config files located in `workdir/whisper/` for different methods
