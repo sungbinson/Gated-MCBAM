@@ -48,12 +48,6 @@ python tools/test.py \
 3. Navigate to the `workdir` folder
 4. Run `ensemble.py` with appropriate config files and weight paths
 
-Example:
-```bash
-python ensemble.py \
-    --config path/to/config.py \
-    --checkpoint path/to/weights.pth
-```
 
 ## Directory Structure
 ```
