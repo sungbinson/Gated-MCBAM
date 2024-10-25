@@ -100,8 +100,8 @@ if __name__ == "__main__":
     CONFIG = [
     '/home/hjkim/whispers2024_ouput/mmsegmentation/workdir/whisper/upernet-r50-convnext-cbam-weighted-12Channel/config.py',
     '/home/hjkim/whispers2024_ouput/mmsegmentation/workdir/whisper/upernet-r50-swin-cbam_weighted-12Channel/config.py',
-    '/home/hjkim/whispers2024_ouput/mmsegmentation/workdir/whisper/Gcbamr50_conv_normalize_256x256_upernet_last_v3/Gcbamr50_convn_normalize_256x256_upernet_80k_jhmin_celoss.py',          
-    '/home/hjkim/whispers2024_ouput/mmsegmentation/workdir/whisper/Gcbamr50_swin_weight_256x256_upernet_last_v3/Gcbamr50_swin_normalize_256x256_upernet_80k_jhmin_celoss.py'
+    '/home/hjkim/whispers2024_ouput/mmsegmentation/workdir/whisper/Gcbamr50_conv_normalize_256x256_upernet_last_v3/config.py',          
+    '/home/hjkim/whispers2024_ouput/mmsegmentation/workdir/whisper/Gcbamr50_swin_weight_256x256_upernet_last_v3/config.py'
     ]
 
     CKPT   = [
