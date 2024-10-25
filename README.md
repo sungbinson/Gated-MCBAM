@@ -19,8 +19,12 @@ Our model features:
 - Conversion script: `12ch-10ch.py`
 - Output is stored in the `multisen` folder
 
-### 2. VV/VH Channel Processing
-- VV and VH channels are processed into 3-channel format
+### 2. SAR Data Processing
+- Process VV and VH channels into 3-channel format
+- Create a new directory called 'SAR_AVG_TIF' containing:
+  - Channel 1: VV
+  - Channel 2: VH
+  - Channel 3: (VV+VH)/2
 - Processing script: `tools/dataset_converters/new_channel_yreb.py`
 
 ## Model Weights
