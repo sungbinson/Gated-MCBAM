@@ -1,11 +1,11 @@
-# Gated-MCBAM: A Cross-Modal Attention Framework with Dual-Stream Architecture for Multi-Source Remote Sensing Segmentation
+# Gated-MCBAM: Cross-Modal Block Attention Module with Gating Mechanism for Remote Sensing Segmentation
 
 This repository contains the implementation of Gated-MCBAM, an innovative dual-stream framework that combines cross-modal attention and gating mechanisms for multi-source remote sensing segmentation. Our approach effectively integrates SAR and optical remote sensing data through a sophisticated attention mechanism. This implementation is based on the [MMSegmentation](https://github.com/open-mmlab/mmsegmentation) framework.
 
 
 ## Model Architecture
 <div align="center">
-  <img src="overview_v4.pdf" width="800" height="400"/>
+  <img src="overview_v4-1.png" width="800" height="400"/>
 </div>
 Our model features:
 - Dual-stream architecture for processing SAR and MSI data
