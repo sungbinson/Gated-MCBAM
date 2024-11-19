@@ -5,7 +5,7 @@ This repository contains the implementation of Gated-MCBAM, an innovative dual-s
 
 ## Model Architecture
 <div align="center">
-  <img src="overview_v4-1.png" width="800" height="600"/>
+  <img src="overview_v4-1.png" width="900" height="500"/>
 </div>
 Our model features:
 - Dual-stream architecture for processing SAR and MSI data
