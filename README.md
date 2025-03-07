@@ -1,11 +1,11 @@
-# Gated-MCBAM: Cross-Modal Block Attention Module with Gating Mechanism for Remote Sensing Segmentation
+# Gated-MCBAM: Cross-Modal Block Attention Module with Gating Mechanism for Remote Sensing Segmentation@WHISPERS'2024
 
-This repository contains the implementation of Gated-MCBAM, an innovative dual-stream framework that combines cross-modal attention and gating mechanisms for multi-source remote sensing segmentation. Our approach effectively integrates SAR and optical remote sensing data through a sophisticated attention mechanism. This implementation is based on the [MMSegmentation](https://github.com/open-mmlab/mmsegmentation) framework.
+This repository contains the implementation of Gated-MCBAM, an innovative dual-stream framework that combines cross-modal attention and gating mechanisms for multi-source remote sensing segmentation. Our approach effectively integrates SAR and optical remote sensing data through a sophisticated attention mechanism. This implementation is based on the [MMSegmentation](https://github.com/open-mmlab/mmsegmentation) framework. origial code is [here](https://github.com/jeongho-min/whispers2024_lumir)
 
 
 ## Model Architecture
 <div align="center">
-  <img src="overview_v4-1.png" width="900" height="500"/>
+  <img src="assets/overview_v4-1.png" width="900" height="500"/>
 </div>
 Our model features:
 - Dual-stream architecture for processing SAR and MSI data
@@ -102,7 +102,6 @@ python tools/test.py \
 │   └── dataset_converters
 │       └── new_channel_yreb.py
         └── 12ch-10ch.py
-└── workdir
     └── ensemble.py
 ```
 
@@ -113,6 +112,7 @@ python tools/test.py \
 
 For any questions or issues, please contact:
 - Email: jeongho.min@unist.ac.kr
+- Email: sbson0621@gmail.com
 
 ## License
 
@@ -122,5 +122,12 @@ For any questions or issues, please contact:
 
 If you find this work useful in your research, please consider citing:
 ```
-[Citation information to be added]
+@INPROCEEDINGS{10876487,
+  author={Min, Jeongho and Son, Sungbin and Kim, Hyeonjin and Back, Seunghyeok and Yoo, Jaejun and Kong, Youngkyun},
+  booktitle={2024 14th Workshop on Hyperspectral Imaging and Signal Processing: Evolution in Remote Sensing (WHISPERS)}, 
+  title={Gated-MCBAM: Cross-Modal Block Attention Module with Gating Mechanism for Remote Sensing Segmentation}, 
+  year={2024},
+  pages={1-5},
+  keywords={Deep learning;Attention mechanisms;Convolution;Semantic segmentation;Bidirectional control;Logic gates;Sensors;Remote sensing;Synthetic aperture radar;Hyperspectral imaging;Multi-modal;Gating mechanism;Semantic segmentation;Remote sensing},
+  doi={10.1109/WHISPERS65427.2024.10876487}}
 ```
