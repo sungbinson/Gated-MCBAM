@@ -34,7 +34,7 @@ Our model features:
 
 ### Prerequisites
 - Preprocessed dataset (multisen folder and SAR_AVG_TIF)
-- Config files located in `workdir/whisper/` for different methods
+- Config files located in `configs/whisper/` for different methods
 
 ### Training on a Single GPU
 
@@ -45,7 +45,7 @@ python tools/train.py ${CONFIG_FILE} [optional arguments]
 
 Example:
 ```bash
-python tools/train.py ./workdir/whisper/Gcbamr50_swin_weight_256x256_upernet_last_v3/config.py
+python tools/train.py ./configs/whisper/Gcbamr50_swin_weight_256x256_upernet_last_v3/config.py
 ```
 
 #### Optional Arguments
